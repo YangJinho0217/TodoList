@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     var titleLable : UILabel = {
         
         let label = UILabel()
-        label.text = "메인화면입니다"
+        label.text = "Hello"
         label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 70)
+        label.font = UIFont.boldSystemFont(ofSize: 50)
         label.textAlignment = .center
         return label
     }()
