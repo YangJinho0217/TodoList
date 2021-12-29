@@ -10,20 +10,27 @@ import Lottie
 
 class ViewController: UIViewController {
     
-    var titleLable : UILabel = {
+    //Lable 정의
+    var titleLabel : UILabel = {
         
         let label = UILabel()
+        
+        //label의 텍스트 정의
         label.text = "Hello"
+        //label의 텍스트 컬러 정의
         label.textColor = .black
+        //label의 폰트 정의
         label.font = UIFont.boldSystemFont(ofSize: 50)
+        //label의 위치 정의
         label.textAlignment = .center
+        // return값을 날려주어야 합니다.
         return label
     }()
     
     let animationView : AnimationView = {
         
-        let animview = AnimationView(name: "88770-loading-boxes")
-        animview.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+        let animview = AnimationView(name: "86299-3x3-cube-loader-3")
+        animview.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
         animview.contentMode = .scaleAspectFill
         return animview
     }()
@@ -42,11 +49,10 @@ class ViewController: UIViewController {
             self.animationView.removeFromSuperview()
             
             
-            
-            self.view.addSubview(self.titleLable)
-            self.titleLable.translatesAutoresizingMaskIntoConstraints = false
-            self.titleLable.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-            self.titleLable.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+            self.view.addSubview(self.titleLabel)
+            self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
+            self.titleLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+            self.titleLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         }
     }
 
