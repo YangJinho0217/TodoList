@@ -10,12 +10,14 @@
 		326D7518CA4765C7A770C6D3 /* Pods_TodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F818376E32EB2678C03697A6 /* Pods_TodoList.framework */; };
 		DAD16F64277C1B670087D976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16F63277C1B670087D976 /* AppDelegate.swift */; };
 		DAD16F66277C1B670087D976 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16F65277C1B670087D976 /* SceneDelegate.swift */; };
-		DAD16F68277C1B670087D976 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16F67277C1B670087D976 /* ViewController.swift */; };
+		DAD16F68277C1B670087D976 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16F67277C1B670087D976 /* MainViewController.swift */; };
 		DAD16F6B277C1B670087D976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD16F69277C1B670087D976 /* Main.storyboard */; };
 		DAD16F6D277C1B680087D976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD16F6C277C1B680087D976 /* Assets.xcassets */; };
 		DAD16F70277C1B680087D976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD16F6E277C1B680087D976 /* LaunchScreen.storyboard */; };
 		DAD16F78277C4B100087D976 /* 88770-loading-boxes.json in Resources */ = {isa = PBXBuildFile; fileRef = DAD16F77277C4B100087D976 /* 88770-loading-boxes.json */; };
 		DAD16F7A277C962E0087D976 /* 86299-3x3-cube-loader-3.json in Resources */ = {isa = PBXBuildFile; fileRef = DAD16F79277C962E0087D976 /* 86299-3x3-cube-loader-3.json */; };
+		DAD16FA0277D86FF0087D976 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16F9F277D86FF0087D976 /* SignUpViewController.swift */; };
+		DAD16FA2277D88C50087D976 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FA1277D88C50087D976 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,13 +26,15 @@
 		DAD16F60277C1B670087D976 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD16F63277C1B670087D976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD16F65277C1B670087D976 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAD16F67277C1B670087D976 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAD16F67277C1B670087D976 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DAD16F6A277C1B670087D976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAD16F6C277C1B680087D976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD16F6F277C1B680087D976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAD16F71277C1B680087D976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD16F77277C4B100087D976 /* 88770-loading-boxes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "88770-loading-boxes.json"; sourceTree = "<group>"; };
 		DAD16F79277C962E0087D976 /* 86299-3x3-cube-loader-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "86299-3x3-cube-loader-3.json"; sourceTree = "<group>"; };
+		DAD16F9F277D86FF0087D976 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DAD16FA1277D88C50087D976 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F818376E32EB2678C03697A6 /* Pods_TodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,17 +88,27 @@
 		DAD16F62277C1B670087D976 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				DAD16F9E277D84FE0087D976 /* Controllers */,
 				DAD16F79277C962E0087D976 /* 86299-3x3-cube-loader-3.json */,
 				DAD16F77277C4B100087D976 /* 88770-loading-boxes.json */,
 				DAD16F63277C1B670087D976 /* AppDelegate.swift */,
 				DAD16F65277C1B670087D976 /* SceneDelegate.swift */,
-				DAD16F67277C1B670087D976 /* ViewController.swift */,
 				DAD16F69277C1B670087D976 /* Main.storyboard */,
 				DAD16F6C277C1B680087D976 /* Assets.xcassets */,
 				DAD16F6E277C1B680087D976 /* LaunchScreen.storyboard */,
 				DAD16F71277C1B680087D976 /* Info.plist */,
 			);
 			path = TodoList;
+			sourceTree = "<group>";
+		};
+		DAD16F9E277D84FE0087D976 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAD16F67277C1B670087D976 /* MainViewController.swift */,
+				DAD16F9F277D86FF0087D976 /* SignUpViewController.swift */,
+				DAD16FA1277D88C50087D976 /* SplashViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD16F68277C1B670087D976 /* ViewController.swift in Sources */,
+				DAD16F68277C1B670087D976 /* MainViewController.swift in Sources */,
 				DAD16F64277C1B670087D976 /* AppDelegate.swift in Sources */,
+				DAD16FA0277D86FF0087D976 /* SignUpViewController.swift in Sources */,
 				DAD16F66277C1B670087D976 /* SceneDelegate.swift in Sources */,
+				DAD16FA2277D88C50087D976 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
