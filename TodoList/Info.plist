@@ -62,5 +62,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoadsUsageDescription</key>
+		<dict/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>QR코드를 인식하기 위해 카메라 권한이 필요합니다.</string>
 </dict>
 </plist>

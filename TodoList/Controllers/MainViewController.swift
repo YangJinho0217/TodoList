@@ -15,12 +15,14 @@ class MainViewController : UIViewController {
     @IBOutlet var LogoImage: UIImageView!
     @IBOutlet var StackView: UIStackView!
     @IBOutlet var LoginButton: UIButton!
+    @IBOutlet var btnMove: UIButton!
     
     func Hidden() {
         LogoImage.isHidden = false
         StackView.isHidden = false
         StackView.isHidden = false
         LoginButton.isHidden = false
+        btnMove.isHidden = false
     }
     //Lable 정의
 //    var titleLabel : UILabel = {
@@ -68,6 +70,12 @@ class MainViewController : UIViewController {
         }
     }
 
+    @IBAction func ActionWeb(_ sender: Any) {
+        let sb = UIStoryboard(name: "WebVIew", bundle: nil)
+        let vc2 = sb.instantiateViewController(withIdentifier: "WebVIewViewController") as! WebVIewViewController
+        vc2.modalPresentationStyle = .fullScreen
+        present(vc2, animated: true, completion: nil)
+    }
     
    
 }

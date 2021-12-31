@@ -62,6 +62,15 @@
                                     <segue destination="YFd-K4-O8g" kind="show" id="xFw-GL-sQd"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGg-cm-rcZ">
+                                <rect key="frame" x="50" y="762" width="314" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Move Site"/>
+                                <connections>
+                                    <action selector="ActionWeb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQp-di-2fa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -72,9 +81,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rnA-mJ-I8J" secondAttribute="bottom" constant="20" id="StM-dB-HI7"/>
                             <constraint firstItem="dq8-SI-uzW" firstAttribute="top" secondItem="LXb-F3-l3K" secondAttribute="bottom" constant="40" id="Vjd-R0-HwH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rnA-mJ-I8J" secondAttribute="trailing" constant="50" id="Ypg-Al-kKQ"/>
+                            <constraint firstItem="vGg-cm-rcZ" firstAttribute="trailing" secondItem="rnA-mJ-I8J" secondAttribute="trailing" id="df8-4L-9zU"/>
                             <constraint firstItem="LXb-F3-l3K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hlT-Jy-Vta"/>
+                            <constraint firstItem="vGg-cm-rcZ" firstAttribute="leading" secondItem="rnA-mJ-I8J" secondAttribute="leading" id="npw-8y-hVn"/>
                             <constraint firstItem="LXb-F3-l3K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vKa-Br-wPs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LXb-F3-l3K" secondAttribute="trailing" constant="20" id="wrL-uO-7VN"/>
+                            <constraint firstItem="rnA-mJ-I8J" firstAttribute="top" secondItem="vGg-cm-rcZ" secondAttribute="bottom" constant="20" id="zf2-fj-zRU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vtV-mK-vSj"/>
@@ -83,6 +95,7 @@
                         <outlet property="LogoImage" destination="LXb-F3-l3K" id="ZIi-Ic-vax"/>
                         <outlet property="MainVie" destination="8bC-Xf-vdC" id="OA0-Kr-Uri"/>
                         <outlet property="StackView" destination="dq8-SI-uzW" id="cit-Io-OPq"/>
+                        <outlet property="btnMove" destination="vGg-cm-rcZ" id="2Ou-Ax-Q46"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -18,6 +18,9 @@
 		DAD16F7A277C962E0087D976 /* 86299-3x3-cube-loader-3.json in Resources */ = {isa = PBXBuildFile; fileRef = DAD16F79277C962E0087D976 /* 86299-3x3-cube-loader-3.json */; };
 		DAD16FA0277D86FF0087D976 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16F9F277D86FF0087D976 /* SignUpViewController.swift */; };
 		DAD16FA2277D88C50087D976 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FA1277D88C50087D976 /* SplashViewController.swift */; };
+		DAD16FA4277EB9510087D976 /* WebVIewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FA3277EB9510087D976 /* WebVIewViewController.swift */; };
+		DAD16FA7277EB97D0087D976 /* WebVIew.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD16FA6277EB97D0087D976 /* WebVIew.storyboard */; };
+		DAD16FA9277EBAA20087D976 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD16FA8277EBAA20087D976 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		DAD16F79277C962E0087D976 /* 86299-3x3-cube-loader-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "86299-3x3-cube-loader-3.json"; sourceTree = "<group>"; };
 		DAD16F9F277D86FF0087D976 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DAD16FA1277D88C50087D976 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		DAD16FA3277EB9510087D976 /* WebVIewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVIewViewController.swift; sourceTree = "<group>"; };
+		DAD16FA6277EB97D0087D976 /* WebVIew.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebVIew.storyboard; sourceTree = "<group>"; };
+		DAD16FA8277EBAA20087D976 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F818376E32EB2678C03697A6 /* Pods_TodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD16FA9277EBAA20087D976 /* WebKit.framework in Frameworks */,
 				326D7518CA4765C7A770C6D3 /* Pods_TodoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +69,7 @@
 		84BAE3B22E74D9E96353A078 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAD16FA8277EBAA20087D976 /* WebKit.framework */,
 				F818376E32EB2678C03697A6 /* Pods_TodoList.framework */,
 			);
 			name = Frameworks;
@@ -88,12 +96,12 @@
 		DAD16F62277C1B670087D976 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				DAD16FA5277EB96C0087D976 /* Storyboards */,
 				DAD16F9E277D84FE0087D976 /* Controllers */,
 				DAD16F79277C962E0087D976 /* 86299-3x3-cube-loader-3.json */,
 				DAD16F77277C4B100087D976 /* 88770-loading-boxes.json */,
 				DAD16F63277C1B670087D976 /* AppDelegate.swift */,
 				DAD16F65277C1B670087D976 /* SceneDelegate.swift */,
-				DAD16F69277C1B670087D976 /* Main.storyboard */,
 				DAD16F6C277C1B680087D976 /* Assets.xcassets */,
 				DAD16F6E277C1B680087D976 /* LaunchScreen.storyboard */,
 				DAD16F71277C1B680087D976 /* Info.plist */,
@@ -107,8 +115,18 @@
 				DAD16F67277C1B670087D976 /* MainViewController.swift */,
 				DAD16F9F277D86FF0087D976 /* SignUpViewController.swift */,
 				DAD16FA1277D88C50087D976 /* SplashViewController.swift */,
+				DAD16FA3277EB9510087D976 /* WebVIewViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DAD16FA5277EB96C0087D976 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DAD16F69277C1B670087D976 /* Main.storyboard */,
+				DAD16FA6277EB97D0087D976 /* WebVIew.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +192,7 @@
 				DAD16F70277C1B680087D976 /* LaunchScreen.storyboard in Resources */,
 				DAD16F6D277C1B680087D976 /* Assets.xcassets in Resources */,
 				DAD16F6B277C1B670087D976 /* Main.storyboard in Resources */,
+				DAD16FA7277EB97D0087D976 /* WebVIew.storyboard in Resources */,
 				DAD16F78277C4B100087D976 /* 88770-loading-boxes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +248,7 @@
 			files = (
 				DAD16F68277C1B670087D976 /* MainViewController.swift in Sources */,
 				DAD16F64277C1B670087D976 /* AppDelegate.swift in Sources */,
+				DAD16FA4277EB9510087D976 /* WebVIewViewController.swift in Sources */,
 				DAD16FA0277D86FF0087D976 /* SignUpViewController.swift in Sources */,
 				DAD16F66277C1B670087D976 /* SceneDelegate.swift in Sources */,
 				DAD16FA2277D88C50087D976 /* SplashViewController.swift in Sources */,

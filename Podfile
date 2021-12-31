@@ -6,6 +6,7 @@ target 'TodoList' do
   use_frameworks!
 
   pod 'lottie-ios'
+  pod 'QRCodeReader.swift', '~> 10.1.0'
   # Pods for TodoList
 
 end

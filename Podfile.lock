@@ -1,16 +1,20 @@
 PODS:
   - lottie-ios (3.3.0)
+  - QRCodeReader.swift (10.1.0)
 
 DEPENDENCIES:
   - lottie-ios
+  - QRCodeReader.swift (~> 10.1.0)
 
 SPEC REPOS:
   trunk:
     - lottie-ios
+    - QRCodeReader.swift
 
 SPEC CHECKSUMS:
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
 
-PODFILE CHECKSUM: fc6534c5c5174e62ac8e465400df17a26950ce83
+PODFILE CHECKSUM: eb29b7f1cda4f2ec2eca425389564174fdfa39dc
 
 COCOAPODS: 1.11.2
