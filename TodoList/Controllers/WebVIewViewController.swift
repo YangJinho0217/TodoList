@@ -49,7 +49,7 @@ class WebVIewViewController: UIViewController, QRCodeReaderViewControllerDelegat
         
     }
     //MARK : - fileprivate 메소드
-    @objc fileprivate func QRcodeLaunch(){
+    @objc func QRcodeLaunch(){
         print("MainViewController - QRcodeLaunch called")
         
         readerVC.delegate = self

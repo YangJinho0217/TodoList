@@ -21,6 +21,13 @@
 		DAD16FA4277EB9510087D976 /* WebVIewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FA3277EB9510087D976 /* WebVIewViewController.swift */; };
 		DAD16FA7277EB97D0087D976 /* WebVIew.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD16FA6277EB97D0087D976 /* WebVIew.storyboard */; };
 		DAD16FA9277EBAA20087D976 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD16FA8277EBAA20087D976 /* WebKit.framework */; };
+		DAD16FCB278409180087D976 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD16FCA278409180087D976 /* TabBar.storyboard */; };
+		DAD16FCD27840A9D0087D976 /* UIMainTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FCC27840A9D0087D976 /* UIMainTabBarControllerViewController.swift */; };
+		DAD16FD127840C360087D976 /* NavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FD027840C360087D976 /* NavigationBarViewController.swift */; };
+		DAD16FD327840C450087D976 /* NavigationBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD16FD227840C450087D976 /* NavigationBar.storyboard */; };
+		DAD16FD5278424B90087D976 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD16FD4278424B90087D976 /* Popup.storyboard */; };
+		DAD16FD7278425450087D976 /* AlertPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FD6278425450087D976 /* AlertPopUpViewController.swift */; };
+		DAD16FD92784295B0087D976 /* WebBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FD82784295B0087D976 /* WebBlogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,13 @@
 		DAD16FA3277EB9510087D976 /* WebVIewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVIewViewController.swift; sourceTree = "<group>"; };
 		DAD16FA6277EB97D0087D976 /* WebVIew.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebVIew.storyboard; sourceTree = "<group>"; };
 		DAD16FA8277EBAA20087D976 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DAD16FCA278409180087D976 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		DAD16FCC27840A9D0087D976 /* UIMainTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMainTabBarControllerViewController.swift; sourceTree = "<group>"; };
+		DAD16FD027840C360087D976 /* NavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarViewController.swift; sourceTree = "<group>"; };
+		DAD16FD227840C450087D976 /* NavigationBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationBar.storyboard; sourceTree = "<group>"; };
+		DAD16FD4278424B90087D976 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		DAD16FD6278425450087D976 /* AlertPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopUpViewController.swift; sourceTree = "<group>"; };
+		DAD16FD82784295B0087D976 /* WebBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBlogViewController.swift; sourceTree = "<group>"; };
 		F818376E32EB2678C03697A6 /* Pods_TodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +130,10 @@
 				DAD16F9F277D86FF0087D976 /* SignUpViewController.swift */,
 				DAD16FA1277D88C50087D976 /* SplashViewController.swift */,
 				DAD16FA3277EB9510087D976 /* WebVIewViewController.swift */,
+				DAD16FCC27840A9D0087D976 /* UIMainTabBarControllerViewController.swift */,
+				DAD16FD027840C360087D976 /* NavigationBarViewController.swift */,
+				DAD16FD6278425450087D976 /* AlertPopUpViewController.swift */,
+				DAD16FD82784295B0087D976 /* WebBlogViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,6 +143,9 @@
 			children = (
 				DAD16F69277C1B670087D976 /* Main.storyboard */,
 				DAD16FA6277EB97D0087D976 /* WebVIew.storyboard */,
+				DAD16FCA278409180087D976 /* TabBar.storyboard */,
+				DAD16FD227840C450087D976 /* NavigationBar.storyboard */,
+				DAD16FD4278424B90087D976 /* Popup.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -188,11 +209,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD16FD5278424B90087D976 /* Popup.storyboard in Resources */,
 				DAD16F7A277C962E0087D976 /* 86299-3x3-cube-loader-3.json in Resources */,
 				DAD16F70277C1B680087D976 /* LaunchScreen.storyboard in Resources */,
 				DAD16F6D277C1B680087D976 /* Assets.xcassets in Resources */,
 				DAD16F6B277C1B670087D976 /* Main.storyboard in Resources */,
+				DAD16FD327840C450087D976 /* NavigationBar.storyboard in Resources */,
 				DAD16FA7277EB97D0087D976 /* WebVIew.storyboard in Resources */,
+				DAD16FCB278409180087D976 /* TabBar.storyboard in Resources */,
 				DAD16F78277C4B100087D976 /* 88770-loading-boxes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,9 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD16FD127840C360087D976 /* NavigationBarViewController.swift in Sources */,
 				DAD16F68277C1B670087D976 /* MainViewController.swift in Sources */,
 				DAD16F64277C1B670087D976 /* AppDelegate.swift in Sources */,
 				DAD16FA4277EB9510087D976 /* WebVIewViewController.swift in Sources */,
+				DAD16FD7278425450087D976 /* AlertPopUpViewController.swift in Sources */,
+				DAD16FD92784295B0087D976 /* WebBlogViewController.swift in Sources */,
+				DAD16FCD27840A9D0087D976 /* UIMainTabBarControllerViewController.swift in Sources */,
 				DAD16FA0277D86FF0087D976 /* SignUpViewController.swift in Sources */,
 				DAD16F66277C1B670087D976 /* SceneDelegate.swift in Sources */,
 				DAD16FA2277D88C50087D976 /* SplashViewController.swift in Sources */,

@@ -105,7 +105,6 @@
         <!--Sign Up View Controller-->
         <scene sceneID="x4z-sE-H5p">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dyB-8c-wzI" sceneMemberID="firstResponder"/>
                 <viewController id="YFd-K4-O8g" customClass="SignUpViewController" customModule="TodoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apd-zs-JbS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -164,33 +163,72 @@
                                     <action selector="ActionLoginMove:" destination="YFd-K4-O8g" eventType="touchUpInside" id="XaK-vM-sZh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-jN-tpn">
+                                <rect key="frame" x="50" y="761" width="314" height="30"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Move TabBar"/>
+                                <connections>
+                                    <action selector="ActionTabBar:" destination="YFd-K4-O8g" eventType="touchUpInside" id="QVG-gx-x8Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7z-7A-08P">
+                                <rect key="frame" x="50" y="710" width="314" height="30"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Move Navigation"/>
+                                <connections>
+                                    <action selector="ActionNavigation:" destination="YFd-K4-O8g" eventType="touchUpInside" id="f6L-6s-N2f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAF-xg-tTI">
+                                <rect key="frame" x="50" y="659" width="314" height="30"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Move PopUp"/>
+                                <connections>
+                                    <action selector="ActionPopUp:" destination="YFd-K4-O8g" eventType="touchUpInside" id="dHt-bZ-c8l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fMj-NS-pGE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="EXh-jN-tpn" firstAttribute="leading" secondItem="xEW-6a-vqh" secondAttribute="leading" id="1A5-vo-4sb"/>
+                            <constraint firstItem="zAF-xg-tTI" firstAttribute="trailing" secondItem="V7z-7A-08P" secondAttribute="trailing" id="1zW-2U-Qbm"/>
+                            <constraint firstItem="EXh-jN-tpn" firstAttribute="trailing" secondItem="xEW-6a-vqh" secondAttribute="trailing" id="2n2-4W-ugi"/>
+                            <constraint firstItem="xEW-6a-vqh" firstAttribute="top" secondItem="EXh-jN-tpn" secondAttribute="bottom" constant="21" id="3MW-U7-6p1"/>
                             <constraint firstItem="xEW-6a-vqh" firstAttribute="leading" secondItem="fMj-NS-pGE" secondAttribute="leading" constant="50" id="7AV-Hl-cha"/>
                             <constraint firstItem="fMj-NS-pGE" firstAttribute="bottom" secondItem="xEW-6a-vqh" secondAttribute="bottom" constant="20" id="7fA-Ak-4w6"/>
                             <constraint firstItem="fMj-NS-pGE" firstAttribute="trailing" secondItem="VAa-6T-1j0" secondAttribute="trailing" constant="20" id="Asu-Nt-lWU"/>
+                            <constraint firstItem="V7z-7A-08P" firstAttribute="trailing" secondItem="EXh-jN-tpn" secondAttribute="trailing" id="BoC-en-gM1"/>
+                            <constraint firstItem="V7z-7A-08P" firstAttribute="top" secondItem="zAF-xg-tTI" secondAttribute="bottom" constant="21" id="F9T-5a-lRz"/>
+                            <constraint firstItem="V7z-7A-08P" firstAttribute="leading" secondItem="EXh-jN-tpn" secondAttribute="leading" id="JUt-JN-Jft"/>
                             <constraint firstItem="KCf-vV-4WI" firstAttribute="leading" secondItem="fMj-NS-pGE" secondAttribute="leading" constant="20" id="OVa-VJ-RPz"/>
                             <constraint firstItem="VAa-6T-1j0" firstAttribute="leading" secondItem="fMj-NS-pGE" secondAttribute="leading" constant="20" id="SA8-qx-ATO"/>
+                            <constraint firstItem="zAF-xg-tTI" firstAttribute="leading" secondItem="V7z-7A-08P" secondAttribute="leading" id="b4M-NX-DYg"/>
                             <constraint firstItem="fMj-NS-pGE" firstAttribute="trailing" secondItem="KCf-vV-4WI" secondAttribute="trailing" constant="20" id="ctp-cL-IWq"/>
                             <constraint firstItem="KCf-vV-4WI" firstAttribute="top" secondItem="VAa-6T-1j0" secondAttribute="bottom" constant="40" id="fPr-FL-8su"/>
                             <constraint firstItem="VAa-6T-1j0" firstAttribute="top" secondItem="fMj-NS-pGE" secondAttribute="top" constant="20" id="qbH-Yy-gFv"/>
+                            <constraint firstItem="EXh-jN-tpn" firstAttribute="top" secondItem="V7z-7A-08P" secondAttribute="bottom" constant="21" id="rFB-d9-AC3"/>
                             <constraint firstItem="fMj-NS-pGE" firstAttribute="trailing" secondItem="xEW-6a-vqh" secondAttribute="trailing" constant="50" id="taj-3R-LxO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ge9-bn-tgu"/>
                     <connections>
                         <outlet property="btnLogin" destination="xEW-6a-vqh" id="2wZ-RZ-kIV"/>
+                        <outlet property="btnNavigation" destination="V7z-7A-08P" id="d2y-Lk-CFe"/>
+                        <outlet property="btnPopUp" destination="zAF-xg-tTI" id="yDv-Jv-Ftn"/>
+                        <outlet property="btnTabBar" destination="EXh-jN-tpn" id="CLh-Fu-zx3"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyB-8c-wzI" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1057" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GbA-9M-Ib6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UEW-n0-5cR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="6UB-la-i0R" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Yt-zz-W8m">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -200,12 +238,16 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="g9w-kP-FcL"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEW-n0-5cR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-664" y="84"/>
         </scene>
     </scenes>
     <resources>
         <image name="sun.min.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
