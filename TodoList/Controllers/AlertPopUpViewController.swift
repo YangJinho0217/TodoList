@@ -8,14 +8,17 @@
 import UIKit
 
 class AlertPopUpViewController: UIViewController {
+    
+    
 
     @IBOutlet var ContentView: UIView!
     @IBOutlet var BtnBlog: UIButton!
     @IBOutlet var BtnBg: UIButton!
+    @IBOutlet var btnGithub: UIButton!
     
     // 비동기처리하기
     var blogbtnCompletionCloure : (() -> Void)?
-    
+    var popupDeleget : PopupDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,7 @@ class AlertPopUpViewController: UIViewController {
     func updateUI(){
         ContentView.layer.cornerRadius = 15
         BtnBlog.layer.cornerRadius = 15
+        btnGithub.layer.cornerRadius = 15
         
     }
     
@@ -48,6 +52,11 @@ class AlertPopUpViewController: UIViewController {
         self.dismiss(animated: false, completion: nil)
     }
     
+    //버튼을 눌렀을 때 Delegate 발동됨
+    @IBAction func ActionGithub(_ sender: Any) {
+        popupDeleget?.clickedGithub()
+        self.dismiss(animated: false, completion: nil)
+    }
     
     
 }

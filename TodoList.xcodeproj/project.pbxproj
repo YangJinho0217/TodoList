@@ -28,6 +28,8 @@
 		DAD16FD5278424B90087D976 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD16FD4278424B90087D976 /* Popup.storyboard */; };
 		DAD16FD7278425450087D976 /* AlertPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FD6278425450087D976 /* AlertPopUpViewController.swift */; };
 		DAD16FD92784295B0087D976 /* WebBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FD82784295B0087D976 /* WebBlogViewController.swift */; };
+		DAD16FE027867E150087D976 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FDF27867E150087D976 /* Protocol.swift */; };
+		DAD16FE22786A7FB0087D976 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD16FE12786A7FB0087D976 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		DAD16FD4278424B90087D976 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
 		DAD16FD6278425450087D976 /* AlertPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopUpViewController.swift; sourceTree = "<group>"; };
 		DAD16FD82784295B0087D976 /* WebBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBlogViewController.swift; sourceTree = "<group>"; };
+		DAD16FDF27867E150087D976 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		DAD16FE12786A7FB0087D976 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F818376E32EB2678C03697A6 /* Pods_TodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +114,7 @@
 		DAD16F62277C1B670087D976 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				DAD16FDC27867DCF0087D976 /* Protocol */,
 				DAD16FA5277EB96C0087D976 /* Storyboards */,
 				DAD16F9E277D84FE0087D976 /* Controllers */,
 				DAD16F79277C962E0087D976 /* 86299-3x3-cube-loader-3.json */,
@@ -134,6 +139,7 @@
 				DAD16FD027840C360087D976 /* NavigationBarViewController.swift */,
 				DAD16FD6278425450087D976 /* AlertPopUpViewController.swift */,
 				DAD16FD82784295B0087D976 /* WebBlogViewController.swift */,
+				DAD16FE12786A7FB0087D976 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -148,6 +154,14 @@
 				DAD16FD4278424B90087D976 /* Popup.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DAD16FDC27867DCF0087D976 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DAD16FDF27867E150087D976 /* Protocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +290,8 @@
 				DAD16FA4277EB9510087D976 /* WebVIewViewController.swift in Sources */,
 				DAD16FD7278425450087D976 /* AlertPopUpViewController.swift in Sources */,
 				DAD16FD92784295B0087D976 /* WebBlogViewController.swift in Sources */,
+				DAD16FE22786A7FB0087D976 /* ProfileViewController.swift in Sources */,
+				DAD16FE027867E150087D976 /* Protocol.swift in Sources */,
 				DAD16FCD27840A9D0087D976 /* UIMainTabBarControllerViewController.swift in Sources */,
 				DAD16FA0277D86FF0087D976 /* SignUpViewController.swift in Sources */,
 				DAD16F66277C1B670087D976 /* SceneDelegate.swift in Sources */,

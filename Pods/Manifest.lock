@@ -1,20 +1,32 @@
 PODS:
   - lottie-ios (3.3.0)
+  - PryntTrimmerView (4.0.2)
   - QRCodeReader.swift (10.1.0)
+  - SteviaLayout (4.7.3)
+  - YPImagePicker (5.0.0):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 4.7.3)
 
 DEPENDENCIES:
   - lottie-ios
   - QRCodeReader.swift (~> 10.1.0)
+  - YPImagePicker
 
 SPEC REPOS:
   trunk:
     - lottie-ios
+    - PryntTrimmerView
     - QRCodeReader.swift
+    - SteviaLayout
+    - YPImagePicker
 
 SPEC CHECKSUMS:
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  YPImagePicker: 1463a19a36244e209dcb03c30e63559c5afa9602
 
-PODFILE CHECKSUM: eb29b7f1cda4f2ec2eca425389564174fdfa39dc
+PODFILE CHECKSUM: d06d76f3fd5ca7beab580dddfcda584ac5f456d3
 
 COCOAPODS: 1.11.2

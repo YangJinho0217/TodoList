@@ -8,7 +8,9 @@
 import UIKit
 import WebKit
 
-class WebBlogViewController: UIViewController {
+class WebBlogViewController: UIViewController, PopupDelegate{
+    
+    
 
     @IBOutlet var MyWebBiew: WKWebView!
     @IBOutlet var BtnPopUp: UIButton!
@@ -42,6 +44,7 @@ class WebBlogViewController: UIViewController {
             self.BtnPopUp.isHidden = true
             
         }
+        vc2.popupDeleget = self
         self.present(vc2, animated: false, completion: nil)
     }
     /*
@@ -53,5 +56,13 @@ class WebBlogViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    //MARK: - PopupDelegte
+    func clickedGithub() {
+        print("Sucess Click Github Button")
+        let url = URL (string: "https://github.com/YangJinho0217/TodoList")
+        self.MyWebBiew.load(URLRequest(url: url!))
+        self.BtnPopUp.isHidden = true
+    }
+    
 }

@@ -7,6 +7,7 @@ target 'TodoList' do
 
   pod 'lottie-ios'
   pod 'QRCodeReader.swift', '~> 10.1.0'
+  pod 'YPImagePicker'
   # Pods for TodoList
 
 end

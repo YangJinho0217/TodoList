@@ -23,7 +23,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Eb-xd-6Bo" userLabel="ContentView">
-                                <rect key="frame" x="82" y="298" width="250" height="300"/>
+                                <rect key="frame" x="82" y="273" width="250" height="350"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="—Pngtree—pixel burger illustration_4662309" translatesAutoresizingMaskIntoConstraints="NO" id="ZfN-I9-h2h">
                                         <rect key="frame" x="30" y="30" width="190" height="120"/>
@@ -49,27 +49,44 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OR-bm-fHp">
-                                        <rect key="frame" x="50" y="249" width="150" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="jbo-lK-2Sm"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="블로그 바로가기"/>
-                                        <connections>
-                                            <action selector="ActionWebBlog:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9bH-Ap-YT3"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="eMe-yc-0vQ">
+                                        <rect key="frame" x="50" y="249" width="150" height="74"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OR-bm-fHp">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="jbo-lK-2Sm"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="블로그 바로가기"/>
+                                                <connections>
+                                                    <action selector="ActionWebBlog:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9bH-Ap-YT3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-yQ-teQ">
+                                                <rect key="frame" x="0.0" y="44" width="150" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="vbt-Xu-9Jk"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Github 바로가기"/>
+                                                <connections>
+                                                    <action selector="ActionGithub:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Y2z-3X-NYW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="3OR-bm-fHp" secondAttribute="trailing" constant="50" id="8Im-Nw-9pi"/>
-                                    <constraint firstItem="3OR-bm-fHp" firstAttribute="top" secondItem="s3z-3W-XfO" secondAttribute="bottom" constant="20" id="8in-zm-PMU"/>
+                                    <constraint firstItem="eMe-yc-0vQ" firstAttribute="top" secondItem="s3z-3W-XfO" secondAttribute="bottom" constant="20" id="GEW-qL-DKm"/>
+                                    <constraint firstItem="eMe-yc-0vQ" firstAttribute="leading" secondItem="6Eb-xd-6Bo" secondAttribute="leading" constant="50" id="MKc-tI-TKX"/>
                                     <constraint firstItem="ZfN-I9-h2h" firstAttribute="centerX" secondItem="6Eb-xd-6Bo" secondAttribute="centerX" id="VQL-js-MFe"/>
                                     <constraint firstAttribute="trailing" secondItem="s3z-3W-XfO" secondAttribute="trailing" constant="50" id="WiK-zu-nR0"/>
-                                    <constraint firstItem="3OR-bm-fHp" firstAttribute="leading" secondItem="6Eb-xd-6Bo" secondAttribute="leading" constant="50" id="eyM-IT-6Ej"/>
-                                    <constraint firstAttribute="height" constant="300" id="ha9-62-yE1"/>
+                                    <constraint firstAttribute="trailing" secondItem="eMe-yc-0vQ" secondAttribute="trailing" constant="50" id="gdH-xo-Ydk"/>
+                                    <constraint firstAttribute="height" constant="350" id="ha9-62-yE1"/>
                                     <constraint firstAttribute="width" constant="250" id="iwD-og-Wfg"/>
                                     <constraint firstItem="s3z-3W-XfO" firstAttribute="top" secondItem="ZfN-I9-h2h" secondAttribute="bottom" constant="20" id="lg9-v2-OdE"/>
                                     <constraint firstItem="ZfN-I9-h2h" firstAttribute="top" secondItem="6Eb-xd-6Bo" secondAttribute="top" constant="30" id="mTC-A2-sLa"/>
@@ -92,6 +109,7 @@
                         <outlet property="BtnBg" destination="2M4-uB-T6d" id="bnh-gj-5r8"/>
                         <outlet property="BtnBlog" destination="3OR-bm-fHp" id="ypv-8f-tB7"/>
                         <outlet property="ContentView" destination="6Eb-xd-6Bo" id="hVm-f3-YTy"/>
+                        <outlet property="btnGithub" destination="JcF-yQ-teQ" id="FeK-Ut-BbT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

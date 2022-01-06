@@ -11,14 +11,42 @@
         <!--MY-->
         <scene sceneID="el5-5i-xJW">
             <objects>
-                <viewController id="882-Hw-m9o" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="882-Hw-m9o" customClass="ProfileViewController" customModule="TodoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S17-g4-hr2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CJU-RB-4Ws">
+                                <rect key="frame" x="117" y="144.5" width="180" height="179"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Xck-d1-hTF"/>
+                                    <constraint firstAttribute="width" constant="180" id="iQf-au-rZw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgo-kO-Q60">
+                                <rect key="frame" x="117" y="364" width="180" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="프로필 사진 변경"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Lng-10-28S"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="CJU-RB-4Ws" firstAttribute="top" secondItem="Lng-10-28S" secondAttribute="top" constant="100" id="755-4X-Uqo"/>
+                            <constraint firstItem="pgo-kO-Q60" firstAttribute="leading" secondItem="CJU-RB-4Ws" secondAttribute="leading" id="Jm3-2f-t6Z"/>
+                            <constraint firstItem="CJU-RB-4Ws" firstAttribute="centerX" secondItem="S17-g4-hr2" secondAttribute="centerX" id="Kvt-UX-KTJ"/>
+                            <constraint firstItem="pgo-kO-Q60" firstAttribute="trailing" secondItem="CJU-RB-4Ws" secondAttribute="trailing" id="Ooj-gc-neA"/>
+                            <constraint firstItem="pgo-kO-Q60" firstAttribute="top" secondItem="CJU-RB-4Ws" secondAttribute="bottom" constant="40" id="tug-zS-qAC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" id="P5o-fT-tWg"/>
+                    <connections>
+                        <outlet property="profileBtn" destination="pgo-kO-Q60" id="p19-Em-aHB"/>
+                        <outlet property="profileImage" destination="CJU-RB-4Ws" id="Scb-RC-GSa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgp-JH-kcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,6 +125,7 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="tag.fill" catalog="system" width="128" height="119"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -109,6 +138,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
